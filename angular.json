@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "meme-generator:build"
+            "browserTarget": "meme4fun:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "meme-generator:build:production"
+              "browserTarget": "meme4fun:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "meme-generator:build"
+            "browserTarget": "meme4fun:build"
           }
         },
         "test": {
@@ -122,14 +122,14 @@
           },
           "configurations": {
             "production": {
-              "devServerTarget": "meme-generator:serve:production"
+              "devServerTarget": "meme4fun:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "meme-generator",
+  "defaultProject": "meme4fun",
   "cli": {
     "analytics": false
   }
