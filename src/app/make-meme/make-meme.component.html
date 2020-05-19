@@ -1,0 +1,16 @@
+<div #imageCanvas></div>
+
+<form [formGroup]="form" (ngSubmit)="makeMeme()">
+  <mat-form-field>
+    <textarea matInput formControlName="topText" placeholder="Top Text"></textarea>
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput formControlName="bottomText" placeholder="Bottom Text"></textarea>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="number" formControlName="fontSize" placeholder="Font Size">
+  </mat-form-field>
+
+  <button mat-button type="submit" color="primary">Make Meme</button>
+  <button mat-button type="button" color="primary" (click)="downloadMeme()">Download</button>
+</form>

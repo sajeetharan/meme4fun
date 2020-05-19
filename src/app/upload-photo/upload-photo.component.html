@@ -1,0 +1,5 @@
+<input id="upload-meme" type="file" (change)="onFileChange($event)" #fileInput>
+
+<div class="upload">
+  <button class="upload__button" mat-raised-button color="primary" (click)="fileInput.click()">Choose a file</button>
+</div>

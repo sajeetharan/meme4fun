@@ -1,0 +1,16 @@
+#upload-meme {
+  display: none;
+}
+
+.upload {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+
+  &__button {
+    height: 3rem;
+    width: 11rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+}

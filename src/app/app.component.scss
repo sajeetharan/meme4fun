@@ -1,0 +1,25 @@
+
+
+@font-face {
+  font-family: "Impact";
+  src: url("/assets/fonts/impact.ttf");
+}
+.logo {
+  display: inline;
+  padding: 0 10px 0 0;
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 3.3rem;
+    text-align: center;
+    font-weight: bold;
+    color: #fc120a;
+    stroke: 2px black;
+    -webkit-text-stroke: 2px black;
+    font-family: "Impact";
+    margin: 0;
+    user-select: none;
+    line-height: 1;
+  }
+
+}

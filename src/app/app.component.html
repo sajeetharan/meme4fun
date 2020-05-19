@@ -1,0 +1,40 @@
+
+<div class="logo">
+  <h1>
+    MEME 4 FUN!
+  </h1>
+</div>
+
+<mat-horizontal-stepper [linear]="true">
+  <mat-step label="Upload Your Photo" [completed]="false">
+    <app-upload-photo (fileUrl)="onPhotoUpload($event)" (file)="onPhotoPicked($event)" ></app-upload-photo>
+  </mat-step>
+  <mat-step label="Create Your Meme" >
+    <section *ngIf="imgUrl">
+      <table>
+        <tr>
+          <th>Face</th>
+          <th>Anger</th>
+          <th>Fear</th>
+          <th>Happiness</th>
+          <th>Neutral</th>
+          <th>Sadness</th>
+          <th>Age</th>
+        </tr>
+        <ng-container>
+          <tr *ngFor="let value of output; index as i">
+            <td>{{i+1}}</td>
+            <td>{{value.faceAttributes.emotion.anger}}</td>
+            <td>{{value.faceAttributes.emotion.fear}}</td>
+            <td>{{value.faceAttributes.emotion.happiness}}</td>
+            <td>{{value.faceAttributes.emotion.neutral}}</td>
+            <td>{{value.faceAttributes.emotion.sadness}}</td>
+            <td>{{value.faceAttributes.age}}</td>
+          </tr>
+        </ng-container>
+      </table>
+    </section>
+    <app-make-meme *ngIf="imgUrl" [imageUrl]="imgUrl"></app-make-meme>
+    
+  </mat-step>
+</mat-horizontal-stepper>
