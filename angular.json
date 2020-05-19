@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "meme4fun": {
+    "meme-4-fun": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/meme4fun",
+            "outputPath": "dist/meme-4-fun",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,14 +71,14 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "meme4fun:build:production"
+              "browserTarget": "meme-4-fun:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "meme4fun:build"
+            "browserTarget": "meme-4-fun:build"
           }
         },
         "test": {
@@ -122,14 +122,14 @@
           },
           "configurations": {
             "production": {
-              "devServerTarget": "meme4fun:serve:production"
+              "devServerTarget": "meme-4-fun:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "meme4fun",
+  "defaultProject": "meme-4-fun",
   "cli": {
     "analytics": false
   }
