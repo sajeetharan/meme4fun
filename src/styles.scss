@@ -2,3 +2,92 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+    background: rgb(0, 2, 95);
+    padding: 20px;
+  }
+  
+  * {
+    font-family: 'Lato', helvetica, sans-serif;
+  }
+  
+  
+  p, h3 {
+    margin: 5px 0 0;
+  }
+  
+  h2 {
+    font-weight: 300;
+  }
+  
+  hr {
+    opacity: 0.2;
+    width: 100%;
+    margin-top: 25px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ef9d0e;
+  }
+  
+  #canvas {
+    width: 95%;
+    height: 100%;
+    max-width: 1000px;
+    max-height: 700px;
+    margin-left: 30px;
+    margin-top: 0;
+  }
+  
+  /* base layout start */
+  #app {
+    display: flex;
+  }
+  
+  aside {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 600px) {
+    aside {
+      height: 100vh;
+    }
+    main {
+      height: 100vh;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #app {
+      display: block;
+    }
+    aside {
+      width: 100vw;
+    }
+    main {
+      width: 100vw;
+      height: 300px;
+    }
+    #canvas {
+      width: 85%;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    .nomobile {
+      display: none;
+    }
+  }
+  
+  /* base layout end */
+  
+  img {
+    width: 300px;
+    border: 1px solid #777;
+    margin: 15px 0;
+  }
+ 
+  
+  
