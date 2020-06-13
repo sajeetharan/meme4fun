@@ -45,7 +45,7 @@ export class AppComponent {
           const httpOptions = {
             headers: new HttpHeaders({
               'Content-Type': contentType,
-              'Ocp-Apim-Subscription-Key': '03fdbf300216494eb859b9432196aba0'
+              'Ocp-Apim-Subscription-Key': '0465c087d04e43dc81e7308bb9020cdd'
             })
           };
     this.http
